@@ -1,0 +1,79 @@
+body {
+    
+  background-color: white;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+h1 {
+  color:black;
+}
+p {
+  color: black;
+
+}
+
+div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+
+}
+
+section{
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+
+}
+
+.card{
+    display: flex;       /* Ativa o modo de colunas */
+    flex-direction: row; /* Garante que fiquem em linha (lado a lado) */
+    gap: 20px;           /* Cria um espaço entre as colunas */
+    align-items: flex-start; /* Alinha as colunas pelo topo */
+    padding: 20px;
+}
+
+.perfil{
+  background-color: #6589c077;
+  width: 80%;
+  height: 100vh;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  flex-direction: center;
+}
+
+.navegacao{
+  background-color: #6589c077;
+  width: 20%vw;
+  height: 100vh;
+  padding: 20px;
+  gap: 15px;
+  max-width: 25%;
+  border-radius: 10px;
+
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Garante que não tem bolinhas */
+    display: flex;    /* Ativa o flexbox na lista */
+    flex-direction: column; /* Coloca um embaixo do outro */
+    align-items: flex-start; /* Alinha os textos à esquerda */
+    gap: 15px; /* Cria o espaço entre cada link */
+    padding-left: 20px; /* Dá um espacinho da borda da tela */
+}
+
