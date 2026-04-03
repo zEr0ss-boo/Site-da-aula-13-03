@@ -1,0 +1,244 @@
+body {
+  background: url('wallpaper2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: white;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+h2 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+  color: #e0e0e0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-family: "Silkscreen", cursive;
+  font-weight: 400;
+}
+
+tr{
+    color: #e0e0e0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: "Silkscreen", cursive;
+    font-weight: 400;
+
+}
+.postagens-conteudo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+.descricao-status {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center; /* Centraliza a tabela no perfil */
+}
+
+.descricao-status table {
+    border-collapse: separate;
+    border-spacing: 10px 5px; /* Dá um espaço entre as linhas e colunas */
+    color: #e0e0e0;
+    font-size: 14px;
+    text-align: left;
+}
+
+.postagens-conteudo th {
+    color: #80a7e2; /* Cor azulada para os títulos (th) */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    vertical-align: top;
+    width: 80px; /* Largura fixa para os títulos ficarem alinhados */
+}
+
+.postagens-conteudo td {
+    background: rgba(255, 255, 255, 0.05); /* Fundo sutil para o texto */
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-icon {
+    width: 20px;           /* Tamanho ideal para ícones de menu */
+    height: 20px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3)); /* Brilho sutil */
+    transition: transform 0.3s ease;
+}
+
+/* Efeito extra: o ícone aumenta um pouquinho quando você passa o mouse */
+.nav-item:hover .menu-icon {
+    transform: scale(1.2);
+}
+
+.glass-wrapper {
+display: flex;
+    flex-direction: row; /* Garante que fiquem lado a lado */
+    align-items: flex-start; /* Alinha os dois pelo topo */
+    max-width: 900px;
+    margin: 50px auto;
+    background: rgba(91, 111, 126, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(224, 224, 224, 0.2);
+    padding: 20px; /* Dá um respiro interno para as janelas não colarem na borda */
+    gap: 20px;     /* Cria o espaço entre o menu e o perfil */
+}
+.controles-custom {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* O CONTAINER DO MENU (Ajustado) */
+.janela-menu {
+    width: 200px; 
+    flex-shrink: 0; /* Impede o menu de "espremer" se a tela diminuir */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.perfil-container {
+    flex: 1; /* Faz o perfil ocupar todo o resto do espaço à direita */
+    text-align: center;
+    color: white;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: "Silkscreen", cursive;
+    font-weight: 400;
+}
+.navegacao ul {
+    list-style: none;      /* Remove as bolinhas */
+    list-style-type: none; /* Reforça a remoção em alguns navegadores */
+    padding: 0;            /* Remove o recuo que as bolinhas deixam */
+    margin: 0;             /* Garante que não haja espaço sobrando */
+}
+
+.navegacao li {
+    list-style: none;      /* Por segurança, aplicamos no item também */
+}
+
+/* Tamanho da barra */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* O fundo da barra (trilha) */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    margin: 5px;
+}
+
+/* O "pegador" da barra */
+::-webkit-scrollbar-thumb {
+    background: rgba(128, 167, 226, 0.5); /* Azul translúcido */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Quando passa o mouse no pegador */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(128, 167, 226, 0.8);
+}
+
+.nav-item {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease; /* Transição suave */
+    border: 1px solid transparent;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    /* Degradê azulado clássico */
+    background: linear-gradient(to bottom, 
+        rgba(100, 150, 255, 0.4) 0%, 
+        rgba(30, 60, 150, 0.6) 100%);
+    
+    /* Borda brilhante */
+    border: 1px solid rgba(150, 200, 255, 0.8);
+    
+    /* Brilho externo e interno */
+    box-shadow: 
+        0 0 10px rgba(80, 150, 255, 0.5),
+        inset 0 1px 2px rgba(255, 255, 255, 0.4);
+    
+    color: #fff;
+    transform: translateX(5px); /* Dá um leve "pulo" para o lado */
+}
+
+.window-controls {
+    display: flex;
+    gap: 5px;
+}
+
+.window-controls button {
+    width: 28px;
+    height: 18px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 3px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(0,0,0,0.1));
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+/* Efeito no botão de fechar (Vermelho) */
+.btn-close:hover {
+    background: #e81123 !important;
+    border-color: #e81123;
+}
+
+.btn-min:hover, .btn-max:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* A BARRINHA AZUL DO MENU */
+.window-header-mini {
+    height: 25px;
+    background: linear-gradient(to bottom, #7bb0e3 0%, #3d7bad 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.header-left span {
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+/* O CONTEÚDO DENTRO DO MENU */
+.navegacao ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
